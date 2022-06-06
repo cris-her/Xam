@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamContacts.View.StorageDemoView">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button
+                Text="Crear contenedor"
+                Clicked="CrearContenedor"></Button>
+            <Button
+                Text="Crear archivo"
+                Clicked="CreateFile"></Button>
+            <Button
+                Text="Leer archivo"
+                Clicked="ReadFile"></Button>
+            <Button
+                Text="Listar archivos"
+                Clicked="ListFiles"></Button>
+            <Button
+                Text="Cambiar permisos"
+                Clicked="ChangePermissions"></Button>
+            <Button
+                Text="Borrar contenedor"
+                Clicked="DeleteContainer"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

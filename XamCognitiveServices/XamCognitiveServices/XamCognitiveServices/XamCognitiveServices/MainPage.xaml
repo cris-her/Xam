@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XamCognitiveServices"
+             x:Class="XamCognitiveServices.MainPage">
+    <ContentPage.Content>
+        <StackLayout>
+           <Button
+               Text="Abrir Imagen"
+               Clicked="OpenImage"></Button>
+            <Button
+                Text="Analizar imagen"
+                Clicked="AnalyzeImage"></Button>
+            <Button
+                Text="Analizar OCR"
+                Clicked="AnalyzeOCR"></Button>
+            <Button
+                Text="Analizar Rostro"
+                Clicked="AnalyzeFace"></Button>
+            <Button
+                Text="Corregir Texto"
+                Clicked="CheckTextErrors"></Button>
+            <Button
+                Text="Traducir texto"
+                Clicked="TranslateText"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

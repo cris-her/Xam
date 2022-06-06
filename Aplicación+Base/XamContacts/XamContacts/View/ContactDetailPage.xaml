@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamContacts.View.ContactDetailPage">
+
+    <StackLayout>
+        <StackLayout
+            Orientation="Horizontal">
+            <Label
+                Text="Nombre:"
+                WidthRequest="100"/>
+            <Entry
+                Placeholder="Héctor"
+                HorizontalOptions="FillAndExpand"
+                Text="{Binding CurrentContact.Name}"/>
+        </StackLayout>
+        <StackLayout
+            Orientation="Horizontal">
+            <Label
+                Text="Teléfono:"
+                WidthRequest="100"/>
+            <Entry
+                Placeholder="(888)3232432"
+                HorizontalOptions="FillAndExpand"
+                Text="{Binding CurrentContact.Phone}"/>
+        </StackLayout>
+        <StackLayout
+            Orientation="Horizontal">
+            <Label
+                Text="Dirección:"
+                WidthRequest="100"/>
+            <Entry
+                Placeholder="Coloca tu dirección"
+                HorizontalOptions="FillAndExpand"
+                Text="{Binding CurrentContact.Address}"/>
+        </StackLayout>
+        <Label
+            Text="Notas:"
+            WidthRequest="100"/>
+        <Editor
+            HeightRequest="200"
+            HorizontalOptions="FillAndExpand"
+            Text="{Binding CurrentContact.Notes}"/>
+        <Button
+            Text="Guardar"
+            HeightRequest="150"
+            Command="{Binding SaveContactCommand}"/>
+    </StackLayout>
+</ContentPage>
